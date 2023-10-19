@@ -11,9 +11,9 @@
 	</parent>
 
 	<groupId>com.example</groupId>
-	<artifactId>vocabluary-with-security</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>vocabulary-with-security</name>
+	<artifactId>app</artifactId>
+	<version>0.0.1</version>
+	<name>app</name>
 	<description>Demo project for Spring Boot + Security</description>
 
 	<properties>

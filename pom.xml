@@ -12,7 +12,7 @@
 
 	<groupId>com.example</groupId>
 	<artifactId>vocabluary-with-security</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>vocabulary-with-security</name>
 	<description>Demo project for Spring Boot + Security</description>
 

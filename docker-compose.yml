@@ -1,0 +1,22 @@
+version: '1'
+
+services:
+  db:
+    image: postgres:alpine
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: cartman
+      POSTGRES_PASSWORD : cartman
+      POSTGRES_DB : db
+    container_name: vocabulary-db-compose
+    volumes:
+      - db-data:/foo
+
+  vocabulary:
+    image: my-spring-app:latest
+    ports:
+      - "8080:8080"
+
+volumes:
+  db-data:

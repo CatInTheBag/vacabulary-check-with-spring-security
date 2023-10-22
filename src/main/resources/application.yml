@@ -1,5 +1,5 @@
 server:
-  port : 8081
+  port : 8080
 
 spring:
   jpa:
@@ -11,9 +11,9 @@ spring:
         format_sql: true
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:postgresql://localhost:5432/db
-    #url: jdbc:postgresql://vocabulary-db:5432/db
-    username: cartman
+    url: jdbc:postgresql://postgres:5432/postgres
+    #url: jdbc:postgresql://vocabulary-db:5432/postgres
+    username: postgres
     password: cartman
     driverClassName: org.postgresql.Driver
   sql:

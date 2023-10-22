@@ -1,22 +1,25 @@
-version: '1'
-
 services:
   db:
     image: postgres:alpine
+    container_name: postgres
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: cartman
+      POSTGRES_USER: postgres
       POSTGRES_PASSWORD : cartman
-      POSTGRES_DB : db
-    container_name: vocabulary-db-compose
-    volumes:
-      - db-data:/foo
+      POSTGRES_DB : postgres
+    networks:
+      - spring
 
   vocabulary:
-    image: my-spring-app:latest
+    image: spring-project:latest
     ports:
       - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - spring
 
-volumes:
-  db-data:
+networks:
+  spring:
+    name: spring-compose

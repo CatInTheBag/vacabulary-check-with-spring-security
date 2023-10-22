@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-alpine
+FROM eclipse-temurin:17-alpine
 LABEL authors="Cartman"
 ARG JAR_FILE=target/*.jar
 

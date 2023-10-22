@@ -6,8 +6,8 @@ services:
       - "5432:5432"
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD : cartman
-      POSTGRES_DB : postgres
+      POSTGRES_PASSWORD: cartman
+      POSTGRES_DB: postgres
     networks:
       - spring
 
